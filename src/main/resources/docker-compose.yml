@@ -1,0 +1,14 @@
+version: "3"
+services:
+  samplemongodb:
+    image: mongo:latest
+    container_name: "samplemongodb"
+    ports:
+      - 27017:27017
+  samplemongospringboot:
+    image: samplemongospringapp:v1
+    container_name: samplemongospringboot
+    ports:
+      - 8080:8080
+    links:
+      - samplemongodb
