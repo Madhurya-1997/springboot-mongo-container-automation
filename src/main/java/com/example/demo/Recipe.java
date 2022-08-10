@@ -7,13 +7,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Document(collection = "recipes")
+//@Data
+//@NoArgsConstructor
+//@AllArgsConstructor
+//@Document(collection = "recipes")
 public class Recipe {
-    @MongoId
-    private String id;
-    private String name;
-    private String cook;
+//    @MongoId
+//    private String id;
+//    private String name;
+//    private String cook;
 }

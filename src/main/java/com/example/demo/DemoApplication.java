@@ -18,18 +18,18 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@Autowired
-	private RecipeRepository recipeRepository;
+//	@Autowired
+//	private RecipeRepository recipeRepository;
 
 	@GetMapping("/")
 	public String home() {
 		return "This is a demo app to test AWS deployment and containerization";
 	}
-	@PostMapping("/add")
-	public Recipe addRecipe(@RequestBody Recipe recipe) {
-		return recipeRepository.save(recipe);
-	}
-	@GetMapping("/fetch")
-	public List<Recipe> fetchAllRecipes() { return recipeRepository.findAll(); }
+//	@PostMapping("/add")
+//	public Recipe addRecipe(@RequestBody Recipe recipe) {
+//		return recipeRepository.save(recipe);
+//	}
+//	@GetMapping("/fetch")
+//	public List<Recipe> fetchAllRecipes() { return recipeRepository.findAll(); }
 
 }
