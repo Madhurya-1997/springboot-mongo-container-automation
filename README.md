@@ -19,11 +19,11 @@
 
 7. to test the collections/tables in the db instance
 > docker exec -it samplemongodb bash
-# mongo
-# show dbs
-# use recipedb
-# show collections
-# db.recipe.find().pretty()
+> mongo
+> show dbs
+> use recipedb
+> show collections
+> db.recipe.find().pretty()
 
 <hr />
 
