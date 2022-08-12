@@ -1,14 +1,14 @@
 version: "3"
 services:
-  samplemongodb:
+  demomongodb:
     image: mongo:latest
-    container_name: "samplemongodb"
+    container_name: "demomongodb"
     ports:
       - 27017:27017
-  samplemongospringboot:
-    image: samplemongospringapp:v1
-    container_name: samplemongospringboot
+  demoapp:
+    image: 883630/demoapp:v1
+    container_name: demoapp
     ports:
       - 8080:8080
     links:
-      - samplemongodb
+      - demomongodb

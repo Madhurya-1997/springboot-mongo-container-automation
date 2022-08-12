@@ -1,3 +1,3 @@
 FROM openjdk:15
-ADD target/samplemongoapp.jar samplemongoapp.jar
-ENTRYPOINT ["java", "-jar", "samplemongoapp.jar"]
+ADD target/demoapp.jar demoapp.jar
+ENTRYPOINT ["java", "-jar", "demoapp.jar"]
